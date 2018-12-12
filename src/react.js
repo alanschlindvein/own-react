@@ -4,7 +4,7 @@
 
    function anElement(elem, props, children) {
       if(isClass(elem)) {
-         return handleClass(elem, props);
+         return handleClass(elem, props, children);
       }
       if(isStateLessComponent(elem)) {
          return elem(props);
